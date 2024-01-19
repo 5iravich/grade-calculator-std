@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai&family=Prompt:wght@300;500;600&display=swap');
+
+.product-form{
+    font-family: 'IBM Plex Sans Thai', sans-serif;
+    width: 30rem;
+    max-width: 100%;
+    margin: auto;
+}
+
+.product-item{
+    width: 20rem;  
+    max-width: 100%;
+}
+
+.product__title{
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.product__price{
+    text-align: center;
+    color: #4d4d4d;
+    margin-bottom: 0.5rem;
+}
+
+.product__description{
+    text-align: center;
+}
+
+.form-btn{
+    display: flex;
+    justify-content: center;
+}
+.form-btn .btn{
+    font-weight: bold;
+    color: white;
+    background-color: #00A9FF;
+    border: 1px solid #00A9FF;
+    padding: 5px 20px;
+    border-radius: 10px;
+}
+
+.form-btn .btn:hover{
+    background-color: #007ab7;
+    transition: 0.2s;
+}

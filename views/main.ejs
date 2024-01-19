@@ -1,0 +1,48 @@
+<%- include('includes/head.ejs')%>
+    <link rel="stylesheet" href="/css/grade.css"/>
+</head>
+    <%- include('includes/nav.ejs')%>
+<body>
+    <div class="main-header__position">
+    <div class="header">
+        <h2>เกรดเฉลี่ยวัดใจ</h2>
+    </div>
+    <main class="app">
+        <div class="gpa">
+            <div>
+                <p class="gpa__label">Semester G.P.A.</p>
+                <p class="gpa__date">1/2566</p>
+            </div>
+            <p class="gpa__value"> 3.58</p>
+        </div>
+        <div class="transcript">
+        <% if (prods.length > 0) {%>
+            <% for (let grade of prods) { %>
+                
+                    <div class="transcript__row">
+                      <div class="transcript__code"><%= grade.subjectid%></div>
+                      <div class="transcript__subject">
+                        <%= grade.subjectname%>
+                      </div>
+                      <div class="transcript__grade"><%= grade.grade%></div>
+                    <div class="transcript__credit"><%= grade.subjectcredit%></div>
+                    </div>
+            <% } %>
+        </div>
+        <% } else {%>
+            <div class="transcript__row">
+                <h1>คุณยังไม่ได้เพิ่มวิชา</h1>
+            </div>
+        <% } %>
+        </div>
+        <div class="total">
+            <div>
+              <p class="total__label">Date records:</p>
+              <p class="total__date">As of <span class="date">12/08/2023</span></p>
+            </div>
+            <p class="total__value">Total Credits: 20</p>
+          </div>     
+    </main>
+</div>
+</body>
+</html>

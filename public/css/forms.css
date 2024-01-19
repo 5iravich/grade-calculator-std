@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai&family=Prompt:wght@300;500;600&display=swap');
+.form-control{
+    margin: 2rem 0;
+}
+.form-control label,
+.form-control input{
+    font-family: 'IBM Plex Sans Thai', sans-serif;
+    font-size: 16px;
+    display: block;
+    width: 100%;
+}
+.form-control input{
+    border: 1px solid #f3c230;
+    font: inherit;
+    border-radius: 2px;
+    font-size: 16px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.form-control input:focus{
+    outline-color: #d93d30;
+}
